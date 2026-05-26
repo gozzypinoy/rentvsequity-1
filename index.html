@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"
+    />
+    <meta name="theme-color" content="#0b0d12" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SynthKey" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <title>SynthKey</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="splash" class="splash">
+        <div class="splash-card">
+          <h1>SynthKey</h1>
+          <p>A playable synth for iPhone and iPad.</p>
+          <button id="start-btn" class="start-btn" type="button">Tap to start</button>
+        </div>
+      </div>
+      <main id="stage" class="stage" hidden>
+        <header id="controls" class="controls"></header>
+        <section id="toolbar" class="toolbar"></section>
+        <section id="keyboard" class="keyboard" aria-label="Synth keyboard"></section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

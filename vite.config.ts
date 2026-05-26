@@ -1,10 +1,15 @@
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
+const BASE = "/rentvsequity-1/";
+
 export default defineConfig({
+  base: BASE,
   plugins: [
     VitePWA({
       registerType: "autoUpdate",
+      base: BASE,
+      scope: BASE,
       includeAssets: [
         "apple-touch-icon.png",
         "favicon.svg",
@@ -20,8 +25,9 @@ export default defineConfig({
         orientation: "any",
         background_color: "#0b0d12",
         theme_color: "#0b0d12",
-        start_url: "/",
-        scope: "/",
+        id: BASE,
+        start_url: BASE,
+        scope: BASE,
         icons: [
           {
             src: "icons/icon-192.png",
